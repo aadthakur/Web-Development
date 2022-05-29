@@ -1,0 +1,136 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(23, 23, 23);
+    color:#fff;
+    padding: 2rem 1rem;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+}
+
+.nav-links > ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.nav-link{
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+#bars{
+    display: none;
+}
+.nav-link::after{
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color:cyan;
+    margin: 0 auto;
+    transition: 0.4s ease-in-out;
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+.nav-link:hover{
+    transition: 0.4s ease-in-out;
+    color:cyan;
+}
+
+.nav-icon{
+    margin-right: 0.7rem;
+    font-size: 1.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-icon:hover{
+    color: cyan;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-icons{
+    align-self: center;
+}
+
+.nav-title h1{
+    font-size: 1.8rem;
+    font-weight: 100;
+    font-family: cursive;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.nav-title:hover{
+    color: cyan;
+    transition: 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        top: 104px;
+        right: 0;
+        background-color: rgb(23, 23, 23);
+        height: 84.6%;
+        justify-content: center;
+        width: 50%;
+        box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+        transform:translateX(100%) ;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .nav-link{
+        position: relative;
+        left: 1rem;
+        bottom: 2.4rem;
+    }
+    .nav-links > ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .nav-icons{
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;  
+        transform:translateX(200%) ;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .nav-icon{
+        margin-right: 2rem;
+        
+    }
+    
+    #bars{
+        display: block;
+        font-size: 2rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    #bars:hover{
+        transition: 0.5s ease-in-out;
+        color:cyan;
+    }
+}
+
+
+
+.nav-active{
+    transform:translateX(0%);
+    transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+  }
+
+  html,
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+  }
+.nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: var(--purple300);
+    color:white;
+    padding: 0 5rem;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1,0.3);
+    position: sticky;
+    top:0;
+    z-index: 90;
+}
+.nav-link {
+    list-style: none;
+    margin-right: 1.2rem;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    cursor:pointer;
+}
+
+.nav-link::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    display:block;
+    background-color: white;
+    margin: 0 auto;
+    transition:0.3s ease-in-out;
+    
+}
+.nav-link::after:hover {
+    width: 100%;
+    transition:0.3s ease-in-out;
+}
+
+.gift-link {
+    margin-right: 0;
+}
+.nav-links {
+    display:flex;
+}
+
+.nav-logo-text {
+    font-size: 23px;
+}
+
+.container {
+    max-width: 1225px;
+    margin: 0 auto;
+}
+/* Hero-section */
+
+.hero-section {
+    background-image: url("../images/hero_image.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:white;
+    text-align: center;
+}
+
+.hero-txts {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-txts > h1 {
+    font-size: 7rem;
+    margin-bottom: 2.5rem;
+    font-weight: bolder;
+}
+.hero-txts > h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+::selection{
+    background-color: black;
+    color:white;
+}
+
+.music-section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--purple500);
+    color:white;
+}
+.music-title{
+    margin:2.5rem 0;
+}
+
+.music-section > p {
+    padding: 0 4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    border-style: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+.primary-btn {
+    background-color:var(--red600);
+    color:white;
+    margin-bottom: 1.5rem;
+}
+.primary-btn:hover{
+    background-color:#ff0000;
+    transition: 0.3s ease-in-out;
+}
+.secondary-btn {
+    background-color:var(--purple300);
+    color:white;
+}
+.secondary-btn:hover {
+    background-color:#4400ff;
+}
+
+
+.music-2-paragraph {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.music-img {
+    position: relative;
+    top:400px;
+    margin-top: -400px;
+}
+
+.about-music-section{
+    margin-top: 30rem;
+}
+
+
+.about-music-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.about-music-section h2 {
+    font-size: 16px;
+    margin-bottom: 3.5rem;
+}
+
+.about-music-section p {
+    font-size: 16px;
+    margin-bottom: 3rem;  
+}
+
+.about-music-section .secondary-btn {
+    margin-bottom:3rem;
+}
+
+.macbook-img {
+    margin-bottom: 3rem;
+}
+
+.music-quote {
+    background-image: url(../images/video.png);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding: 4rem;
+    text-align: center;
+}
+
+.music-quote-heading {
+    font-size: 12px;
+    margin-bottom: 2rem;
+
+}
+
+.gift-section{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 5rem 3rem;
+    
+}
+.gift-components {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 3rem;
+}
+
+li {
+    list-style: none;
+}
+.final-section{ 
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--purple600);
+    color:white;
+}
+
+.final-heading::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display:block;  
+    margin: 0.5rem 0;
+}
+.final-heading {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+.final-section li {
+    font-size: 14px;
+}
+
+.final-list{
+    margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: #270082;
+    color:white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 12px;
+    font-weight: 100;
+
+}

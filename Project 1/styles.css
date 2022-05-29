@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Water+Brush&display=swap');
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: rgb(35, 35, 35);
+    color:white;
+    box-shadow: 5px 5px 5px rgba(1, 1,1, 0.2);
+    font-family: 'Roboto', sans-serif;
+
+}
+.nav-center > h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-family: 'Water Brush', cursive;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+.nav-links a{
+    color:white;
+    margin-right: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: 0.6s ease-in-out;
+
+}
+.nav-links li {
+    margin-top: 1rem
+}
+
+.container {
+    height: 75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    margin-bottom: 3rem;
+    font-size: 4rem ;
+    text-align: center;
+}
+
+.btn{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border-style: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(31, 31, 31);
+    transition: 0.3s ease-in-out;
+    color:white;
+}
+
+.nav-links a:hover {
+    color: aqua;
+    transition: 0.6s ease-in-out;
+}
+
+.hero-txt {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+::selection{
+    background-color: crimson;
+}

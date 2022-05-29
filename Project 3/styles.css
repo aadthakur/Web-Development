@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ms+Madi&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: rgb(17, 17, 17);
+    color:white;
+}
+
+.header-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 6rem;
+    font-family: 'Ms Madi', cursive;
+    margin-top: 1rem;
+}
+
+.header-content h2{
+    font-size: 2rem;
+    font-family: 'Tapestry', cursive;
+}
+.player {
+    display:flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    filter: invert(100%);
+    margin-top: 4rem;
+    position:relative;
+    bottom: 2rem;
+}
+
+.player1{
+    margin-right: 5rem;
+}
+.player h2 {
+    text-align: center;
+}
+
+::selection{
+    background-color: rgb(244, 244, 244);
+    color:black;
+}
+
+#winner {
+    font-family: 'Tapestry', cursive;
+    font-size: 3rem;
+}
