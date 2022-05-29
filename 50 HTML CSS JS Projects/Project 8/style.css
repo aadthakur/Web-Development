@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+
+#btns{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin: 1rem;
+    border:0;
+    background-color: #fff;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border: 2.7px solid #000;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.btn:hover {
+    color:crimson;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:focus{
+    outline:none;
+}
+
+#theme-btn{
+    background-color:WHITE;
+    padding: 0.9rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    transition: 0.5s ease-in-out;
+}
+#theme-btn:focus{
+    outline:none;
+}
+
+.theme-active {
+    background-color: white;
+    color:black;
+    transition: 0.5s ease-in-out;   
+}
+
+.theme-active.btn{
+    border: 10px solid black;
+}
+
+.theme-active #theme-btn{
+    background-color: black;
+    color:white;
+    transition: 0.5s ease-in-out;
+}
+
+.theme-btn:hover{
+    box-shadow: 0 0 7px 5px rgba(255, 255, 255, 0.7);
+}
+
+.theme-active .theme-btn:hover {
+    box-shadow: 0 0 7px 5px rgba(0,0,0,0.7);
+}
+
+.moon-icon{
+    position: relative;
+    left: 2px;
+}

@@ -1,0 +1,50 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    background-color: rgb(22, 22, 22);
+}
+
+.container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#search{
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    font-size: 1.3rem;
+    transition: 0.4s linear;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 1.78rem;
+    padding-top: 0.2rem;
+    border:0;
+    background-color: rgb(253, 253, 253);
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+container.active #search{
+    width: 200px;
+}
+.container.active .btn{
+    transform:translateX(198px);
+}

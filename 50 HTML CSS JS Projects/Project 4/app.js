@@ -1,0 +1,6 @@
+const search = document.getElementById("search");
+const btn = document.querySelector(".btn");
+const container = document.querySelector('.container');
+btn.addEventListener('click',() => {
+    container.classList.toggle('active');
+})

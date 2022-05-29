@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.content{
+    width: 100vw;
+    font-family: cursive;
+    padding: 10rem;
+}
+
+.show-nav{
+    transform: rotate(-20deg);
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+}
+
+.content > h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    margin-top: 1.5rem;
+}
+.content h3{
+    margin: 1.5rem 0 ;
+}
+
+.circle-container{
+    transform: translate(-100px,-100px);
+    position: fixed;
+}
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+.circle button {
+    position: absolute;
+    left: 50%;
+    top: 50%;   
+    background: transparent;
+    border: 0;
+    color:white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.circle button:focus{
+    outline:none;
+}
+img {
+    width: 100%;
+}
+
+#open{
+    left: 60%;
+    top:60%;
+}
+#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+::selection{
+    background-color: rgb(49, 217, 183);
+}
